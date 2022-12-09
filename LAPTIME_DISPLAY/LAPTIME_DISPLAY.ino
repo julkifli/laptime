@@ -4,8 +4,8 @@
 
 
 #define inPin 9   // sensor E18-D80NK
-#define tAR 200  
-#define tAct 10   
+#define tAR 200   //Debounce time, it must be configured to prevent the timer from stopping before the robot completes the turn [milliseconds]
+#define tAct 10   //Serial port time sending period to avoid saturation [milliseconds]
 
 LedControl lc=LedControl(12,11,10,1);
 
