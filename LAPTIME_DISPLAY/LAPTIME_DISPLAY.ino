@@ -34,6 +34,8 @@ void loop() {
   while (count == 0) {
     digitalWrite (13, LOW);
     display7();
+    //Serial.println(seconds);  //using this for proccesing display
+
     if (!digitalRead (inPin)) {
       reset ();
       count = true;
